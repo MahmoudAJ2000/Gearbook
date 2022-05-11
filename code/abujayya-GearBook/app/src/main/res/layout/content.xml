@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/descriptionText"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:background="#D5D5D5"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Description"
+            android:textColor="#595959"
+            android:textSize="25sp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#36D5D5D5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dollarSign"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#36D5D5D5"
+                    android:shadowColor="#717171"
+                    android:text="$"
+                    android:textColor="#595959"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/priceText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#36D5D5D5"
+                    android:gravity="center"
+                    android:shadowColor="#838383"
+                    android:text="Price"
+                    android:textColor="#595959"
+                    android:textSize="20sp"
+                    android:textStyle="italic">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/dateText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#36D5D5D5"
+                android:gravity="center"
+                android:text="date"
+                android:textColor="#878787"
+                android:textSize="15sp">
+
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

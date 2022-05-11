@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/counterDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="bottom|end"
+                    android:text="0" />
+
+                <EditText
+                    android:id="@+id/descriptionInputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:hint="Description"
+                    android:maxLength="40"
+                    android:shadowColor="#36D5D5D5"
+                    android:textSize="20sp"
+                    app:counterEnabled="true">
+
+                </EditText>
+
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/dateInputText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:hint="Date (yyyy-MM-dd)"
+                android:shadowColor="#36D5D5D5"
+                android:textSize="20sp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/priceInputText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:hint="Price"
+                android:shadowColor="#36D5D5D5"
+                android:textSize="20sp">
+
+            </EditText>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/counterMaker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="bottom|end"
+                    android:text="0" />
+
+                <EditText
+                    android:id="@+id/makerInputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:hint="Maker"
+                    android:maxLength="20"
+                    android:shadowColor="#36D5D5D5"
+                    android:textSize="20sp">
+
+                </EditText>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/counterComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="bottom|end"
+                    android:text="0" />
+
+                <EditText
+                    android:id="@+id/commentInputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:hint="Comment (optional)"
+                    android:maxLength="20"
+                    android:shadowColor="#36D5D5D5"
+                    android:textSize="20sp">
+
+                </EditText>
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
